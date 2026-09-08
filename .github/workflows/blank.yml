@@ -22,10 +22,8 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      # Atualizado de @v4 para @v6 para suportar o Node.js 24 sem gerar avisos
-      - uses: actions/upload-artifact@v5
-
+      # Mantém a ação de checkout atualizada para o Node 24
+      - uses: actions/checkout@v6
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
